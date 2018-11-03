@@ -3,6 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  componentDidMount() {
+    console.log(process.env.REACT_APP_GOOGLE_MAP_API_KEY)
+  }
+
   render() {
     return (
       <div className="App">
